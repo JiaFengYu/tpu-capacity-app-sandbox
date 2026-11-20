@@ -1,0 +1,12 @@
+# Synthetic fixture only. No cluster consumes this file.
+kind: InferenceService
+metadata:
+  name: demo
+  namespace: inf-sandbox
+spec:
+  engine:
+    minReplicas: 2 # keep
+    maxReplicas: 4
+  decoder:
+    minReplicas: 3
+    maxReplicas: 6
